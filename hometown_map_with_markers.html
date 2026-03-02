@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f2b5246c013c315859dc3b89b931a757 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f2b5246c013c315859dc3b89b931a757" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f2b5246c013c315859dc3b89b931a757 = L.map(
+                "map_f2b5246c013c315859dc3b89b931a757",
+                {
+                    center: [33.661168399999994, -117.82037110000002],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e5c42245c091c0229ecd2abee756afd8 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/kaitlynglenn/cmm8g8rce00aq01sccthr6vc4/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia2FpdGx5bmdsZW5uIiwiYSI6ImNtbThueWdwZjEyaDEyd3E1cDhkZjhoMnYifQ.KG8EF_s3FmZuL2rS_tAHTQ",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u00a9 Mapbox \u00a9 OpenStreetMap",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e5c42245c091c0229ecd2abee756afd8.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var feature_group_1e8284ea9dc27ce7aef49cad7681bef2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_dc0cb28f73d5cdf40c199cb0edef19c6 = L.marker(
+                [33.71873, -117.78225],
+                {
+}
+            ).addTo(feature_group_1e8284ea9dc27ce7aef49cad7681bef2);
+        
+    
+            var icon_1c78c65c032b80d7d227f15e18145eb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_922071960ff52671be022dbd7a448655 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c23ad1cf416124c760a2df343a13bd1e = $(`<div id="html_c23ad1cf416124c760a2df343a13bd1e" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">Arnold O Beckman High School</h4>       <div><b>Type:</b> School</div>       <div><b>Address:</b> 3588 Bryan Ave, Irvine, CA 926023588 Bryan Ave, Irvine, CA 92602</div>       <div style="margin-top:6px;">This is where I went to high school from 2018-2022. I have so many great memories here where I met my friends for life. I could not have asked for a better high school experience. </div>     <div style="margin-top:8px;"><a href="https://imagescdn.homes.com/i2/-aT0X3a2RuGBW7D9JWTfg-64LjtU9NSCUUrBQS8D_7c/102/irvine-high-school-irvine-ca-schoolphoto.jpg?p=1" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_922071960ff52671be022dbd7a448655.setContent(html_c23ad1cf416124c760a2df343a13bd1e);
+            
+        
+
+        marker_dc0cb28f73d5cdf40c199cb0edef19c6.bindPopup(popup_922071960ff52671be022dbd7a448655)
+        ;
+
+        
+    
+    
+            marker_dc0cb28f73d5cdf40c199cb0edef19c6.bindTooltip(
+                `<div>
+                     Arnold O Beckman High School (School)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc0cb28f73d5cdf40c199cb0edef19c6.setIcon(icon_1c78c65c032b80d7d227f15e18145eb9);
+            
+    
+            feature_group_1e8284ea9dc27ce7aef49cad7681bef2.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var feature_group_e8bbebf642e46b423d1b32e05eadfc82 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b776c77bc7ba69c1c0ffd3db462315c9 = L.marker(
+                [33.623907, -117.944321],
+                {
+}
+            ).addTo(feature_group_e8bbebf642e46b423d1b32e05eadfc82);
+        
+    
+            var icon_9bcc3b7d246497654b08091a9a220142 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "water",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae39fad18f8fd99e6425cce5e18565d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5b592f9800187fa8165e0f26f16e751 = $(`<div id="html_d5b592f9800187fa8165e0f26f16e751" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">54th Street</h4>       <div><b>Type:</b> Beach</div>       <div><b>Address:</b> 54th St, Newport Beach, CA 92663</div>       <div style="margin-top:6px;">54th street has a lot of significance to me because this is the street my families and friends and I would go to on the weekends. It was always the best memories that I will always remember. It reminds me of clear skies and warm weather that makes me miss it everyday.</div>     <div style="margin-top:8px;"><a href="https://d14fqx6aetz9ka.cloudfront.net/wp-content/uploads/2018/12/08104947/klein_newport_July2017_004628-780x520.jpg" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_ae39fad18f8fd99e6425cce5e18565d1.setContent(html_d5b592f9800187fa8165e0f26f16e751);
+            
+        
+
+        marker_b776c77bc7ba69c1c0ffd3db462315c9.bindPopup(popup_ae39fad18f8fd99e6425cce5e18565d1)
+        ;
+
+        
+    
+    
+            marker_b776c77bc7ba69c1c0ffd3db462315c9.bindTooltip(
+                `<div>
+                     54th Street (Beach)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b776c77bc7ba69c1c0ffd3db462315c9.setIcon(icon_9bcc3b7d246497654b08091a9a220142);
+            
+    
+            feature_group_e8bbebf642e46b423d1b32e05eadfc82.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var feature_group_2296f8baf7b6d878508e37ceb4967097 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4c1f9d4004428cc145d2fedbbb19746f = L.marker(
+                [33.54107, -117.783022],
+                {
+}
+            ).addTo(feature_group_2296f8baf7b6d878508e37ceb4967097);
+        
+    
+            var icon_7fe33614941745602f59c41aae66a53f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9eafd8acf88433c5665c7edbb000acb6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abb2168849439bad29d03a41bffe9002 = $(`<div id="html_abb2168849439bad29d03a41bffe9002" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">Hotel Laguna</h4>       <div><b>Type:</b> Hotel</div>       <div><b>Address:</b> 425 S Coast Hwy, Laguna Beach, CA 92651</div>       <div style="margin-top:6px;">This hotel has great significance to me because in this past December, my sister got engaged and I helped set the whole thing up. It was such an exciting moment for not just me but my whole family to celebrate. I will always remember the day vividly. </div>     <div style="margin-top:8px;"><a href="https://socallandmarks.com/wp-content/uploads/2022/07/HotelLaguna002.jpg" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_9eafd8acf88433c5665c7edbb000acb6.setContent(html_abb2168849439bad29d03a41bffe9002);
+            
+        
+
+        marker_4c1f9d4004428cc145d2fedbbb19746f.bindPopup(popup_9eafd8acf88433c5665c7edbb000acb6)
+        ;
+
+        
+    
+    
+            marker_4c1f9d4004428cc145d2fedbbb19746f.bindTooltip(
+                `<div>
+                     Hotel Laguna (Hotel)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c1f9d4004428cc145d2fedbbb19746f.setIcon(icon_7fe33614941745602f59c41aae66a53f);
+            
+    
+            feature_group_2296f8baf7b6d878508e37ceb4967097.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var feature_group_49fb579644ac0b8a9c2c9f1fb981b739 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_47c80709029d6d232e38fd46fc6397d7 = L.marker(
+                [33.614974, -117.9306],
+                {
+}
+            ).addTo(feature_group_49fb579644ac0b8a9c2c9f1fb981b739);
+        
+    
+            var icon_3d6242d7c05d93bbcac1d6f375b904bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d55dfadefd6d2487fa995479fe0cf62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98b6d5f9e662d106f4f9c0034daecd87 = $(`<div id="html_98b6d5f9e662d106f4f9c0034daecd87" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">Malarky's Irish Pub</h4>       <div><b>Type:</b> Bar</div>       <div><b>Address:</b> 3011 Newport Blvd, Newport Beach, CA 92663</div>       <div style="margin-top:6px;">This is the bar that all of my friends would go to when we were home for the summertime. It holds great memories for me because it was always the best times to reminise with my hometown friends.</div>     <div style="margin-top:8px;"><a href="https://ca-times.brightspotcdn.com/dims4/default/47fd725/2147483647/strip/true/crop/2048x1152+0+107/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fbb%2F52%2F0cfcacfe6d4d0c724f67fba2e490%2Ftn-dpt-me-malarkys-gallery-20170921-001" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_5d55dfadefd6d2487fa995479fe0cf62.setContent(html_98b6d5f9e662d106f4f9c0034daecd87);
+            
+        
+
+        marker_47c80709029d6d232e38fd46fc6397d7.bindPopup(popup_5d55dfadefd6d2487fa995479fe0cf62)
+        ;
+
+        
+    
+    
+            marker_47c80709029d6d232e38fd46fc6397d7.bindTooltip(
+                `<div>
+                     Malarky's Irish Pub (Bar)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_47c80709029d6d232e38fd46fc6397d7.setIcon(icon_3d6242d7c05d93bbcac1d6f375b904bd);
+            
+    
+            feature_group_49fb579644ac0b8a9c2c9f1fb981b739.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var feature_group_f74a0ad52b6c288d6cb529851bc0db74 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_7a0ef2121ff2945148852284fee2b3a3 = L.marker(
+                [33.65436, -117.73858],
+                {
+}
+            ).addTo(feature_group_f74a0ad52b6c288d6cb529851bc0db74);
+        
+    
+            var icon_15d42fdaec836ed0732136d1e10c803e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b35f193f4d27eb44b631f4f865d5c0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c88a9ce25ab17f4d1ef6a3a2e255cbd = $(`<div id="html_6c88a9ce25ab17f4d1ef6a3a2e255cbd" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">Bruegger's Bagels</h4>       <div><b>Type:</b> Restuarant</div>       <div><b>Address:</b> 15346 Alton Pkwy, Irvine, CA 92618</div>       <div style="margin-top:6px;">This is a bagel store that my friends and I would walk to on half days in high school. It was always so fun to have independence rather than just getting picked up and going home. </div>     <div style="margin-top:8px;"><a href="https://www.eatlife.net/restaurants/images/brueggers-bagels-irvine.jpg" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_4b35f193f4d27eb44b631f4f865d5c0b.setContent(html_6c88a9ce25ab17f4d1ef6a3a2e255cbd);
+            
+        
+
+        marker_7a0ef2121ff2945148852284fee2b3a3.bindPopup(popup_4b35f193f4d27eb44b631f4f865d5c0b)
+        ;
+
+        
+    
+    
+            marker_7a0ef2121ff2945148852284fee2b3a3.bindTooltip(
+                `<div>
+                     Bruegger's Bagels (Restuarant)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7a0ef2121ff2945148852284fee2b3a3.setIcon(icon_15d42fdaec836ed0732136d1e10c803e);
+            
+    
+            feature_group_f74a0ad52b6c288d6cb529851bc0db74.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var feature_group_68dd2a0ab775e3d44f2bb360910c8ed8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_5acf8b3ee7440b1824bc6323732b044e = L.marker(
+                [33.730922, -117.788561],
+                {
+}
+            ).addTo(feature_group_68dd2a0ab775e3d44f2bb360910c8ed8);
+        
+    
+            var icon_3538cb1e116f9e5495904ce14da9c86b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d774b16ebc7c68e9a419ca4e6789f9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d908db61c0cc21f44320122b5cf9bf9a = $(`<div id="html_d908db61c0cc21f44320122b5cf9bf9a" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">Baja Fish</h4>       <div><b>Type:</b> Restaurant</div>       <div><b>Address:</b> 13125 Jamboree Rd, Tustin, CA 92782</div>       <div style="margin-top:6px;">This is a taco place where my family would always go to with my grandparents. This has significance to me because I have great memories spending time with my grandparents, specifically my grandpa. </div>     <div style="margin-top:8px;"><a href="https://s3-media0.fl.yelpcdn.com/bphoto/e6CI4GR_R_w4JfHjUdRXzg/348s.jpg" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_5d774b16ebc7c68e9a419ca4e6789f9c.setContent(html_d908db61c0cc21f44320122b5cf9bf9a);
+            
+        
+
+        marker_5acf8b3ee7440b1824bc6323732b044e.bindPopup(popup_5d774b16ebc7c68e9a419ca4e6789f9c)
+        ;
+
+        
+    
+    
+            marker_5acf8b3ee7440b1824bc6323732b044e.bindTooltip(
+                `<div>
+                     Baja Fish (Restaurant)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5acf8b3ee7440b1824bc6323732b044e.setIcon(icon_3538cb1e116f9e5495904ce14da9c86b);
+            
+    
+            var marker_897f3527144cbc2da88a212fa3d7878f = L.marker(
+                [33.74701, -117.81214],
+                {
+}
+            ).addTo(feature_group_68dd2a0ab775e3d44f2bb360910c8ed8);
+        
+    
+            var icon_7bf2306bb8fb03694780d3f6d45490a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44f83903e27b52ef7a31f9176cb81e95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2eb1a052ad6f262d4fb3314f8a5370f5 = $(`<div id="html_2eb1a052ad6f262d4fb3314f8a5370f5" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">Ha Long Bay Pho and Grill</h4>       <div><b>Type:</b> Restaurant</div>       <div><b>Address:</b> 13152 Newport Ave. Ste A. Tustin, CA 92780</div>       <div style="margin-top:6px;">This was always a restraurant that my friends and I would go to because it was always empty. The restaurant workers learned all of our names where we were if someone went without the rest of the group.</div>     <div style="margin-top:8px;"><a href="https://img.p.mapq.st/?url=https%3A%2F%2Fs3-media0.fl.yelpcdn.com%2Fbphoto%2FGuNayeuxikSbDwcKufPX5w%2Fl.jpg&w=3840&q=75" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_44f83903e27b52ef7a31f9176cb81e95.setContent(html_2eb1a052ad6f262d4fb3314f8a5370f5);
+            
+        
+
+        marker_897f3527144cbc2da88a212fa3d7878f.bindPopup(popup_44f83903e27b52ef7a31f9176cb81e95)
+        ;
+
+        
+    
+    
+            marker_897f3527144cbc2da88a212fa3d7878f.bindTooltip(
+                `<div>
+                     Ha Long Bay Pho and Grill (Restaurant)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_897f3527144cbc2da88a212fa3d7878f.setIcon(icon_7bf2306bb8fb03694780d3f6d45490a4);
+            
+    
+            feature_group_68dd2a0ab775e3d44f2bb360910c8ed8.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var feature_group_4f5d75a1767370ca44c957634d0f880e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_053f9f91327da9e982279da67542f9bb = L.marker(
+                [33.607814, -117.88999],
+                {
+}
+            ).addTo(feature_group_4f5d75a1767370ca44c957634d0f880e);
+        
+    
+            var icon_7ffd1a644976aef12fb52ec02d1bc2e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca32e851c2e0bb468ff703f78f2b6574 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d71daed935f5d7af4a1a3d755e8e987f = $(`<div id="html_d71daed935f5d7af4a1a3d755e8e987f" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">Isabelle's Cabinet</h4>       <div><b>Type:</b> Store</div>       <div><b>Address:</b> 319 Marine Ave, Newport Beach, CA 92662</div>       <div style="margin-top:6px;">This was a boutique where I got my first ever job. I have great memories here learning responsibility and how to make money on my own. </div>     <div style="margin-top:8px;"><a href="https://visitnewportbeach.com/wp-content/uploads/2018/11/wideshoppingbf.jpg" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_ca32e851c2e0bb468ff703f78f2b6574.setContent(html_d71daed935f5d7af4a1a3d755e8e987f);
+            
+        
+
+        marker_053f9f91327da9e982279da67542f9bb.bindPopup(popup_ca32e851c2e0bb468ff703f78f2b6574)
+        ;
+
+        
+    
+    
+            marker_053f9f91327da9e982279da67542f9bb.bindTooltip(
+                `<div>
+                     Isabelle's Cabinet (Store)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_053f9f91327da9e982279da67542f9bb.setIcon(icon_7ffd1a644976aef12fb52ec02d1bc2e1);
+            
+    
+            feature_group_4f5d75a1767370ca44c957634d0f880e.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var feature_group_79aff88ea5f57d086a8b19f55e2b6ac6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_7fa312bf33b92f032683b22920f8b061 = L.marker(
+                [33.650003, -117.743669],
+                {
+}
+            ).addTo(feature_group_79aff88ea5f57d086a8b19f55e2b6ac6);
+        
+    
+            var icon_afd39178ff2fc7517c4ef8cfe4715579 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5211f23cb42624b50a64ddcb7664764 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8364361fb7fac6f0bfe5fa98e2169a08 = $(`<div id="html_8364361fb7fac6f0bfe5fa98e2169a08" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">Irvine Spectrum Center</h4>       <div><b>Type:</b> Shopping Mall</div>       <div><b>Address:</b> 670 Spectrum Center Dr, Irvine, CA 92618</div>       <div style="margin-top:6px;">This mall is very special to me because I would always go there with my friends and family. I have had countless birthdays there and have made so many great memories.</div>     <div style="margin-top:8px;"><a href="https://www.irvinespectrumcenter.com/media/egedhlwn/isc-topnav-visit-giantwheelcourtyard-aerial-daytime.jpg?width=924&height=498&format=jpg&quality=100&slimmage=true&v=1db60951cba5a10&upscale=false" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_e5211f23cb42624b50a64ddcb7664764.setContent(html_8364361fb7fac6f0bfe5fa98e2169a08);
+            
+        
+
+        marker_7fa312bf33b92f032683b22920f8b061.bindPopup(popup_e5211f23cb42624b50a64ddcb7664764)
+        ;
+
+        
+    
+    
+            marker_7fa312bf33b92f032683b22920f8b061.bindTooltip(
+                `<div>
+                     Irvine Spectrum Center (Shopping Mall)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7fa312bf33b92f032683b22920f8b061.setIcon(icon_afd39178ff2fc7517c4ef8cfe4715579);
+            
+    
+            feature_group_79aff88ea5f57d086a8b19f55e2b6ac6.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var feature_group_60b350f59820a36ba553e67612a30b83 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_ca7176753da848b5b91e049a50b55a84 = L.marker(
+                [33.722894, -117.790578],
+                {
+}
+            ).addTo(feature_group_60b350f59820a36ba553e67612a30b83);
+        
+    
+            var icon_b329a84c78d80d28ada149ce01245c37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8a47b313f59c61f5db76185b4c062b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_193902816e1d65a0d28977733a8574ec = $(`<div id="html_193902816e1d65a0d28977733a8574ec" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">       <h4 style="margin:0 0 6px 0;">Regal Edwards Marketplace</h4>       <div><b>Type:</b> Movie Theater</div>       <div><b>Address:</b> 13782 Jamboree Rd, Irvine, CA 92602</div>       <div style="margin-top:6px;">This was always the movie theater I would go to with my family and friends. It was always a last minute decision that ended with fun. It was super close to my house, so it was always great to late night movies. </div>     <div style="margin-top:8px;"><a href="https://static.where-e.com/United_States/California/Orange_County/Regal-Edwards-Market-Place_94e17fcfb50d5948792e1e2c1b84a48b.jpg" target="_blank">Image link</a></div></div></div>`)[0];
+                popup_c8a47b313f59c61f5db76185b4c062b9.setContent(html_193902816e1d65a0d28977733a8574ec);
+            
+        
+
+        marker_ca7176753da848b5b91e049a50b55a84.bindPopup(popup_c8a47b313f59c61f5db76185b4c062b9)
+        ;
+
+        
+    
+    
+            marker_ca7176753da848b5b91e049a50b55a84.bindTooltip(
+                `<div>
+                     Regal Edwards Marketplace (Movie Theater)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca7176753da848b5b91e049a50b55a84.setIcon(icon_b329a84c78d80d28ada149ce01245c37);
+            
+    
+            feature_group_60b350f59820a36ba553e67612a30b83.addTo(map_f2b5246c013c315859dc3b89b931a757);
+        
+    
+            var layer_control_10acfd1e79efdd9993ce205393a69153_layers = {
+                base_layers : {
+                    "Custom Mapbox Style" : tile_layer_e5c42245c091c0229ecd2abee756afd8,
+                },
+                overlays :  {
+                    "School" : feature_group_1e8284ea9dc27ce7aef49cad7681bef2,
+                    "Beach" : feature_group_e8bbebf642e46b423d1b32e05eadfc82,
+                    "Hotel" : feature_group_2296f8baf7b6d878508e37ceb4967097,
+                    "Bar" : feature_group_49fb579644ac0b8a9c2c9f1fb981b739,
+                    "Restuarant" : feature_group_f74a0ad52b6c288d6cb529851bc0db74,
+                    "Restaurant" : feature_group_68dd2a0ab775e3d44f2bb360910c8ed8,
+                    "Store" : feature_group_4f5d75a1767370ca44c957634d0f880e,
+                    "Shopping Mall" : feature_group_79aff88ea5f57d086a8b19f55e2b6ac6,
+                    "Movie Theater" : feature_group_60b350f59820a36ba553e67612a30b83,
+                },
+            };
+            let layer_control_10acfd1e79efdd9993ce205393a69153 = L.control.layers(
+                layer_control_10acfd1e79efdd9993ce205393a69153_layers.base_layers,
+                layer_control_10acfd1e79efdd9993ce205393a69153_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_f2b5246c013c315859dc3b89b931a757);
+
+        
+</script>
+</html>
